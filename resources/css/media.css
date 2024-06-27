@@ -1,0 +1,219 @@
+/* universal style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(#444cf7 1.75px, #e5e5f7 1.75px);
+  background-size: 35px 35px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* header part */
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-bottom: 2px solid #430a5d;
+
+  button {
+    background-color: #430a5d;
+    padding: 8px 25px;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+
+  .book {
+    font-size: 3rem;
+  }
+  .ish {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #430a5d;
+    padding-left: 4px;
+  }
+}
+
+/* header content */
+main {
+  background-image: url(../images/colorful-books-with-headphones-copy-space.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .content {
+    width: 50%;
+    transform: translateX(200px);
+
+    h1 {
+      color: #430a5d;
+      margin: 20px 0;
+    }
+    P {
+      font-size: 1.4rem;
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #430a5d;
+      padding: 8px 25px;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+  }
+}
+
+/* Currently reading section */
+
+.fiction {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 40px;
+    margin-top: 10px;
+  }
+  button {
+    background-color: #430a5d;
+    padding: 10px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .book-container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .books {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #430a5d23;
+  }
+
+  .books:hover {
+    box-shadow: 10px 10px 10px 10px #430a5d23;
+  }
+  .img {
+    width: 300px;
+    height: 300px;
+    object-position: center;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #430a5d;
+    padding-left: 4px;
+  }
+  .people {
+    font-size: 1.5rem;
+  }
+  .time {
+    font-size: 1.5rem;
+
+    .meeting {
+      font-weight: bold;
+      padding-right: 10px;
+    }
+  }
+}
+
+/* subscribe section */
+
+.subscribe {
+  display: flex;
+  background-color: white;
+  margin-top: 100px;
+  justify-content: space-between;
+  height: 500px;
+  align-items: center;
+
+  .box2{
+    width: 40%;
+  }
+
+  img{
+    width: 100%;
+  }
+  .box1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 30px;
+    padding-left: 100px;
+    width: 60%;
+    p{
+      font-size: 3rem;
+    }
+
+    input{
+      font-size: 2rem;
+      padding: 10px;
+    }
+    button{
+      font-size: 2rem;
+      padding: 10px;
+      background-color: #430a5d;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+button:hover{
+  background-color: #7615a3 !important;
+
+}
+
+
+/*  */
+footer{
+  margin-top: 100px;
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 900px) {
+  main {
+    .content {
+      transform: translateX(100px);
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+
+  .subscribe {
+    .box1 {
+      padding-left: 10px;
+    }
+  }
+  #noti {
+    font-size: 2rem;
+  }
+  #input {
+    font-size: 1.5rem;
+  }
+
+  .fiction {
+    .book-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .content {
+    width: 80%;
+    transform: translateX(0);
+  }
+  .books {
+    width: 100%;
+  }
+  .subscribe {
+    flex-direction: column;
+    .box {
+      width: 100%;
+    }
+  }
+}
